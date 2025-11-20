@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Kontak - Makanan Lezat</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  margin: 0;
+}
+header {
+  background-color: #ff6347;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+nav {
+  background-color: #ffa07a;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+main {
+  padding: 20px;
+  text-align: center;
+}
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+input, textarea {
+  width: 250px;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #e5533d;
+}
+footer {
+  background-color: #ff6347;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Hubungi Kami</h1>
+</header>
+
+<nav>
+  <a href="index.html">Beranda</a>
+  <a href="menu.html">Menu</a>
+  <a href="kontak.html">Kontak</a>
+</nav>
+
+<main>
+  <form id="formKontak">
+    <h3>Kirim Pesan Anda</h3>
+    <input type="text" id="nama" placeholder="Nama Anda" required><br>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <textarea id="pesan" placeholder="Tulis pesan..." required></textarea><br>
+    <button type="submit">Kirim</button>
+  </form>
+  <p id="respon"></p>
+</main>
+
+<footer>
+  <p>&copy;copyrigthtrisa</p>
+</footer>
+
+<script>
+document.getElementById("formKontak").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const nama = document.getElementById("nama").value;
+  document.getElementById("respon").innerHTML = "Terima kasih, " + nama + "! Pesan Anda telah terkirim ✅";
+});
+</script>
+
+</body>
+</html

@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Beranda - Makanan Lezat</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffaf3;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #ff6347;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+nav {
+  background-color: #ffa07a;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+main {
+  padding: 20px;
+  text-align: center;
+}
+footer {
+  background-color: #ff6347;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #e5533d;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Makanan Khas Padang</h1>
+</header>
+
+<nav>
+  <a href="index.html">Beranda</a>
+  <a href="menu.html">Menu</a>
+  <a href="kontak.html">Kontak</a>
+</nav>
+
+<main>
+  <h2 style="color:#ff6347;">Sajian Padang, Nikmat Tak Terkalahkan</h2>
+  <img src="assets/lenkap.png" alt="lenkap" width="500"><br><br>
+
+  <button onclick="bukaHalamanKedua()">Lihat Menu Spesial</button>
+</main>
+<footer>
+  <p>&copy;copyrigthrisa</p>
+</footer>
+<script>
+function bukaHalamanKedua() {
+  window.location.href = "menu.html"
+}
+</script>
+
+</body>
+</html>
